@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой Сайт с Отзывами</title>
+    <style>
+        /* Общие стили страницы */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f6f8fa;
+            color: #24292f;
+        }
+
+        /* Шапка сайта */
+        header {
+            background-color: #24292f;
+            color: #ffffff;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            color: #8c959f;
+        }
+
+        /* Основной контейнер */
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        /* Блок с контентом */
+        .content-section {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 6px;
+            border: 1px solid #d0d7de;
+            margin-bottom: 2rem;
+        }
+
+        /* Блок для отзывов */
+        .comments-section {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 6px;
+            border: 1px solid #d0d7de;
+        }
+
+        .comments-section h2 {
+            margin-top: 0;
+            border-bottom: 1px solid #d0d7de;
+            padding-bottom: 0.5rem;
+        }
+
+        /* Подвал */
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            color: #57606a;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Добро пожаловать на мой сайт!</h1>
+        <p>Простой проект, созданный для демонстрации системы отзывов.</p>
+    </header>
+
+    <main>
+        <!-- Секция с описанием -->
+        <section class="content-section">
+            <h2>О проекте</h2>
+            <p>Это пример статической веб-страницы. Она работает очень быстро, не требует сервера и баз данных, так как мы разворачиваем её прямо через GitHub Pages.</p>
+            <p>Ниже вы можете оставить свое мнение, авторизовавшись через ваш аккаунт GitHub.</p>
+        </section>
+
+        <!-- Секция отзывов -->
+        <section class="comments-section">
+            <h2>Отзывы и комментарии</h2>
+            
+            <!-- Вставьте ваш код giscus или другого виджета ниже -->
+            <!-- Сейчас здесь стоит демонстрационный шаблон, замените data-* атрибуты на свои! -->
+            <script src="https://giscus.app"
+                    data-repo="ЗАМЕНИТЕ_НА_ВАШ_РЕПОЗИТОРИЙ"
+                    data-repo-id="ЗАМЕНИТЕ_НА_ВАШ_ID"
+                    data-category="Announcements"
+                    data-category-id="ЗАМЕНИТЕ_НА_ВАШ_ID_КАТЕГОРИИ"
+                    data-mapping="pathname"
+                    data-strict="0"
+                    data-reactions-enabled="1"
+                    data-emit-metadata="0"
+                    data-input-position="bottom"
+                    data-theme="light"
+                    data-lang="ru"
+                    crossorigin="anonymous"
+                    async>
+            </script>
+            <!-- Конец кода отзывов -->
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Мой GitHub Сайт</p>
+    </footer>
+
+</body>
+</html>
